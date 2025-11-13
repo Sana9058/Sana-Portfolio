@@ -241,9 +241,7 @@ section h2:hover::after {
   text-decoration: underline;
 }
 
-/* --- Responsive Media Queries (Tablet/Large Phone) --- */
 @media (max-width: 900px) {
-  /* General Layout */
   header {
     padding: 18px 30px;
   }
@@ -251,7 +249,6 @@ section h2:hover::after {
     padding: 60px 20px; 
   }
 
-  /* Home Section Stacking */
   .home {
     flex-direction: column;
     text-align: center;
@@ -259,7 +256,6 @@ section h2:hover::after {
     height: auto; 
   }
   
-  /* Resetting desktop margins for mobile/tablet */
   .intro-left {
     margin-left: 0;
     margin-top: 0;
@@ -271,7 +267,6 @@ section h2:hover::after {
     font-size: 2.5rem;
   }
 
-  /* FIX 2: Stop typing animation and make text visible */
   .intro-left h2, .typing-text {
     font-size: 1.4rem;
     animation: none; 
@@ -281,7 +276,6 @@ section h2:hover::after {
     line-height: 1.2;
     height: auto;
   }
-  /* END FIX 2 */
 
   .animation-right {
     width: 100%;
@@ -293,15 +287,12 @@ section h2:hover::after {
     width: 50px;
   }
 
-  /* FIX 1: Skills Section Icon visibility */
   .skills-container {
-    animation: none; /* Disable horizontal sliding animation */
-    flex-wrap: wrap; /* Allow icons to wrap to the next line */
+    animation: none; 
+    flex-wrap: wrap; 
     gap: 30px; 
   }
-  /* END FIX 1 */
 
-  /* Contact Section Adjustments for Tablet/Mobile */
   .contact-section {
     padding: 40px 10px; 
   }
@@ -312,7 +303,6 @@ section h2:hover::after {
       gap: 30px; 
   }
 
-  /* --- FIX: FORCEFUL RESET FOR CONTACT-INFO (Stacking) --- */
   .contact-info {
     transform: none !important; 
     position: static !important;
@@ -329,18 +319,16 @@ section h2:hover::after {
     transform: none; 
   }
 
-  /* --- FIX: MOBILE ORDER AND CENTERING FOR CARD --- */
   .contact-card {
     min-width: unset; 
     width: 90%; 
     max-width: 450px; 
     margin: 0 auto; 
     box-sizing: border-box; 
-    order: -1; /* Card goes to the top (first element) */
+    order: -1; 
   }
 }
 
-/* --- Responsive Media Queries (Small Phone) --- */
 @media (max-width: 600px) {
   /* Global */
   header {
@@ -357,7 +345,6 @@ section h2:hover::after {
     font-size: 0.8rem;
   }
   
-  /* Home Section */
   .intro-left h1 {
     font-size: 1.8rem;
   }
@@ -373,7 +360,6 @@ section h2:hover::after {
       width: 35px; 
   }
   
-  /* Send Button width fix */
   .send-btn {
     width: 100%;
   }
@@ -415,7 +401,6 @@ section h2:hover::after {
   100% { transform: translateX(0); }
 }
 
-/* NOTE: This animation is only active on Desktop now */
 .typing-text {
   display: inline-block;
   overflow: hidden;
@@ -493,7 +478,6 @@ section h2:hover::after {
   margin-top: -5px; 
 }
 
-/* Modal styles */
 .modal {
   display: none;
   position: fixed;
@@ -622,13 +606,11 @@ section h2:hover::after {
 }
 
 
-/* --- CONTACT INFO: ORIGINAL ASYMMETRIC POSITIONING (DESKTOP ONLY) --- */
 .contact-info {
   flex: 1;
   min-width: 280px;
   color: white;
   text-align: center; 
-  /* This creates the desired push to the left and down for the asymmetric look */
   transform: translateX(-150px) translateY(300px); 
 }
 

@@ -36,7 +36,7 @@ for (let i = 0; i < 200; i++) {
   });
 }
 
-// 🚀 Create shooting stars continuously (2–4 at a time)
+
 function createShootingStar() {
   if (Math.random() < 0.1) {
     for (let i = 0; i < Math.floor(Math.random() * 3) + 2; i++) {
@@ -45,7 +45,7 @@ function createShootingStar() {
         y: Math.random() * canvas.height * 0.5,
         len: Math.random() * 80 + 80,
         speed: Math.random() * 10 + 15,
-        angle: Math.PI / 4, // diagonal
+        angle: Math.PI / 4, 
         opacity: 1,
       });
     }
