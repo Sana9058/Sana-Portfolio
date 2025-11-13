@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sana Aijaz | Portfolio</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css?v=2">
+</head>
+<body>
+  <canvas id="stars"></canvas>
+
+  <!-- Navbar -->
+  <header>
+    <nav class="navbar">
+      <div class="logo">SA</div>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+  <section id="home" class="home">
+    <div class="intro-left">
+      <h1>Hi, I'm <br><span class="highlight">Sana Aijaz</span></h1>
+      <h2 class="typing-text">Aspiring Full Stack & Java Developer</h2>
+      <p>Enthusiastic developer specializing in Java and modern web technologies. Skilled in creating responsive interfaces, writing clean code, and solving complex problems using DSA principles.</p>
+    </div>
+
+    <div class="animation-right">
+      <!-- Floating tech icons -->
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" class="float-icon html">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" class="float-icon css">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" class="float-icon js">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" class="float-icon java">
+
+    </div>
+  </section>
+
+
+  <!-- 👩‍💻 About -->
+  <section id="about" class="about">
+    <h2>About Me</h2>
+    <p>
+      I’m a passionate B.Tech Information Technology student and Web Development Intern at 
+      <span class="highlight">Unified Mentor Pvt. Ltd.</span> 
+      I specialize in Java and Full Stack Development, focusing on building scalable and user-centric web applications. Driven by curiosity and continuous learning, I enjoy blending analytical skills with creativity to develop intuitive and high-performance solutions.
+    </p>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects" class="projects">
+    <h2>Projects</h2>
+    <div class="projects-container">
+      <div class="project-card">
+        <h3><a href="https://expense-tracker-2adbf.web.app/" target="_blank"><h3>💰 Expense Tracker</h3></a></h3>
+      <p>Track your daily expenses with a responsive UI and local storage integration.</p>
+      <p><strong>Tech Stack:</strong> HTML, CSS, JavaScript, Firebase</p>
+    </div>
+
+    <div class="project-card">
+      <h3><a href="https://weather-app-fbedf.web.app/" target="_blank"><h3>🌦️ Weather App</h3></a></h3>
+      <p>Get real-time weather updates using OpenWeather API with dynamic UI.</p>
+      <p><strong>Tech Stack:</strong> HTML, CSS, JavaScript, Firebase</p>
+    </div>
+
+    <!-- <div class="project-card">
+      <h3><a href="https://yourprojectlink3.com" target="_blank"><h3>💻 Portfolio Website</h3></a></h3>
+      <p>My personal developer portfolio built using HTML, CSS, and JavaScript.</p>
+      <p><strong>Tech Stack:</strong> HTML, CSS, JavaScript</p>
+    </div> -->
+
+  </section>
+
+
+  <!-- 🧠 Skills -->
+  <section id="skills" class="skills">
+    <h2>Skills</h2>
+    <div class="skills-container">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" class="skill-icon">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" class="skill-icon">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" class="skill-icon">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" class="skill-icon">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" class="skill-icon">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" class="skill-icon">
+    </div>
+  </section>
+
+
+  <!-- 🧑‍💼 Work Experience -->
+  <section id="work" class="work">
+    <h2>Work Experience</h2>
+    <div>
+      <h3>Unified Mentor Pvt. Ltd.</h3>
+      <p><strong>Web Development Intern</strong> | Aug 2025 - Present</p>
+      <p>Working on frontend and backend modules, developing projects, and learning collaborative development practices.</p>
+    </div>
+  </section>
+
+  <!-- 🏆 Achievements & Certifications -->
+<section id="achievements" class="achievements">
+  <h2>Achievements & Certifications</h2>
+  
+  <section id="certificates">
+    <div class="certificates-container">
+
+      <div class="certificate-card">
+        <img src="tcs_certificate.png" alt="TCS iON Career Edge Certificate" onclick="openImage(this)">
+        <h3>TCS iON Career Edge – Young Professional</h3>
+        <p>Certified in Employability Skills, including communication, soft skills, and corporate readiness (07/2025)</p>
+      </div>
+
+      <div class="certificate-card">
+        <img src="deloitte_certificate.png" alt="Deloitte Cybersecurity Certificate" onclick="openImage(this)">
+        <h3>Deloitte Cybersecurity Job Simulation</h3>
+        <p>Completed Deloitte Cybersecurity simulation via Forage; learned risk analysis, incident response, and security frameworks (06/2025)</p>
+      </div>
+
+    </div>
+    <!-- Image Modal for Certificates -->
+    <div id="imgModal" class="modal" onclick="closeImage()"><span class="close">&times;</span>
+      <img class="modal-content" id="modalImg">
+    </div>
+  </section>
+
+  </section>
+
+  <!-- 📩 Contact Section -->
+  <section id="contact" class="contact-section">
+    <h2>Contact Me</h2>
+    <div class="contact-container">
+      
+      <!-- ✅ LEFT SIDE: Connect with Me -->
+      <div class="contact-info">
+        <h3>Connect With Me</h3>
+        <p><i class="fas fa-envelope"></i><span>aijazsana1628@gmail.com</span></p>
+
+        <div class="social-icons">
+          <a href="https://www.linkedin.com/in/aijazsana" target="_blank"><i class="fab fa-linkedin"></i></a>
+          <a href="https://github.com/Sana9058" target="_blank"><i class="fab fa-github"></i></a>
+        </div>
+      </div>
+
+      <!-- ✅ RIGHT SIDE: Send a Message Card -->
+      <div class="contact-card">
+        <h3>Send a Message</h3>
+        <form>
+          <input type="text" placeholder="Your Name" required>
+          <input type="email" placeholder="Your Email" required>
+          <textarea placeholder="How can I help you?"  required></textarea>
+
+          <button class="send-btn">Send a Message <i class="fa-solid fa-paper-plane"></i></button>
+        </form>
+      </div>
+
+    </div>
+  </section>
+  <script src="script.js"></script>
+</body>
+</html>
